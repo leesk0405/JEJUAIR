@@ -894,8 +894,7 @@ nav .util .dis {display: none;}
     content: "";
     display: block;
     position: absolute;
-    width: 0;
-    max-width:calc(100% - 20px);
+    width:calc(100% - 20px);
     bottom: 16px;
     left: 50%;
     transform: translate(-50%,0);
@@ -914,13 +913,6 @@ nav .util .dis {display: none;}
     bottom: 12px;
     rotate: -45deg;
     transition: all 2s;
-}
-.row6 .item2:hover::after{
-    width: 100%;
-}
-.row6 .item2:hover::before{
-    width: 8px;
-    height: 8px;
 }
 
 .row6 .item2 .info {
