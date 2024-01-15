@@ -353,6 +353,12 @@
   .row1 .box .sit>a, .row1 .box .person>a {
     width: 240px;
   }
+
+  .row1 .box .date:hover::before,
+  .row1 .box .sit:hover::before, 
+  .row1 .box .person:hover::before {
+      width: 100%;
+   }
  
   .row1 .box .check {
     width: 140px;

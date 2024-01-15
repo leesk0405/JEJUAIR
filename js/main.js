@@ -47,7 +47,17 @@ if (viewportWidth >= 1200) {
  $('.my .close').click(function(){
   $('.my').removeClass('active')
  });
+$('.row1 .box .btn>div').on("click",function(){
+  $(this).addClass('active').siblings().removeClass('active');
+});
 
+ $('.row1 .box .date,.row1 .box .sit ,.row1 .box .person').click(function(){
+    $(this).addClass('active').siblings().removeClass('active');
+ });
+ 
+ $('.remove').click(function(e){
+    e.preventDefault();
+ });
  let swiper = new Swiper(".slide", {
     slidesPerView: 1,
     spaceBetween: 30,

@@ -420,6 +420,7 @@ nav .util .dis {display: none;}
     font-size: 18px;
     font-weight:600 ;
     color: #B3B3B3;
+    cursor: pointer;
 }
 .row1 .title li.active{
     color: #F15A22;
@@ -459,10 +460,9 @@ nav .util .dis {display: none;}
     box-sizing: border-box;
     font-weight: 500;
 }
-.row1 .box .btn>div:first-child {
+.row1 .box .btn>div.active {
     background-color: #F15A22;
     color: #fff;
-    border-radius: 3px 0 0 0;
 }
 .row1 .box .btn::after {
     /* 왕복,편도,다구간 화살표 */
@@ -575,9 +575,9 @@ nav .util .dis {display: none;}
     transition: width .3s;
 }
 
-.row1 .box .date:hover::before,
-.row1 .box .sit:hover::before, 
-.row1 .box .person:hover::before {
+.row1 .box .date.active::before,
+.row1 .box .sit.active::before, 
+.row1 .box .person.active::before {
     width: 100%;
  }
 .row1 .box .date::after {background-image: url(../img/mo_schedul_1.gif);}
