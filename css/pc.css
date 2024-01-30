@@ -491,7 +491,7 @@
     padding: 10px 25px;
     box-sizing: border-box;
     position: relative;
-    box-shadow: 0 0 12px rgba(0,0,0,.2);
+    box-shadow: 0 0 9px rgba(0,0,0,.2);
     background-color: #fff;
   }
   .row3 .con .air::after {
