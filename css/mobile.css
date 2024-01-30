@@ -406,7 +406,8 @@ nav .util .dis {display: none;}
  */
 /* row1 */
 .row1 {
-    width: 85%;
+    padding-left: 20px;
+    padding-right: 20px;
     margin: 0 auto;
     margin-top: 40px;
     padding-bottom: 40px;    
@@ -435,7 +436,7 @@ nav .util .dis {display: none;}
     box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
     border-radius: 5px;
     position: relative;
-    padding: 16px;
+    padding: 16px 20px;
 }
 .row1 .box .btn {
     /* 왕복,편도, 다구간 */
@@ -528,7 +529,7 @@ nav .util .dis {display: none;}
 .row1 .box .person{
     /* 출발일 */
         /* 좌석,탑승객 */
-        width: 50%;
+        /* width: 50%; */
         margin-right: auto;
     
     /* position: relative;
@@ -564,7 +565,7 @@ nav .util .dis {display: none;}
 .row1 .box .date::before,
 .row1 .box .sit::before,
 .row1 .box .person::before {
- content: "";
+   content: "";
    position: absolute;
    bottom:-2px;
    left:0;
@@ -572,7 +573,7 @@ nav .util .dis {display: none;}
     height: 56px;
     box-sizing: border-box;
     border-bottom: 2px solid #F15A22;
-    transition: width .3s;
+    transition: width .13s;
 }
 
 .row1 .box .date.active::before,
@@ -586,23 +587,23 @@ nav .util .dis {display: none;}
 
 .row1 .box .check {
     /* 조회 */
-    width: 100px;
-    padding: 12px 8px;
+    padding: 12px;
+    margin-top: 32px;
     background-color: #F15A22;
     color: #fff;
     border-radius: 5px;
     text-align: center;
     font-weight: 600;
     font-size: 20px;
-    position: absolute;
-    right: 5%;
-    bottom: 5%;
+} 
+.row1 .box .check:active {
+    background-color: #F58220;
 }
 
  /* row2, row3 */
  .row2 , .row3, .row5 , .row6, .row7{
-    padding-left: 24px;
-    padding-right: 24px;
+    padding-left: 16px;
+    padding-right: 16px;
     margin-top: 30px;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -664,6 +665,7 @@ nav .util .dis {display: none;}
     width: calc(50% - 12px);
     height: auto;
     position: relative;
+    text-wrap: nowrap;
     /* background-color: #f1f1f1; */
     
  }
@@ -677,7 +679,7 @@ nav .util .dis {display: none;}
     vertical-align: bottom;
     /* object-fit: cover; */
     
-    transition: all .4s;
+    transition: all .2s;
     
  }
  .row2 .item:hover img, .row3 .item:hover img {
@@ -827,17 +829,17 @@ nav .util .dis {display: none;}
     height: auto;
     text-align: center;
     margin-bottom: 20px;
-    background-color: #fff5ed;
+    background-color: #fffbf8;
     padding: 10px 0;
     border-radius: 6px;
     overflow: hidden;
 }
 .row5 .con img {
     width: 60%;
-    transition: all .3s;
+    transition: all .2s;
 }
 .row5 .con>div:hover img {
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
 
 .row5 .con h4 {
@@ -863,33 +865,40 @@ nav .util .dis {display: none;}
 .row6 .item2,.row6 .item3 ,.row6 .item4 {
     box-shadow: 2px 2px 8px rgba(0,0,0,.1);
 }
-
 .row6 .item1{
     display: none;
-}
-.row6 .item2{
-    flex:1;
-    aspect-ratio: 5/2;
-    background-image: url(../img/event1_japan.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    border-radius: 6px;
-    position: relative;
-    color: #fff;
-}
-.row6 .item2 .pic {
-    position: absolute;
-    top:10px;
-    left:10px;
-    font-size: 28px;
 }
 .row6 .item2 a, .row6 .item3 a, .row6 .item4 a{
     display: block;
     width: 100%;
     height: 100%;
 }
-
+.row6 .item2{
+    border-radius: 6px;
+    overflow: hidden;
+    position: relative;
+    color: #fff;
+    
+}
+.row6 .item2 .pic  {
+  width: 100%;
+  height: 100%;
+}
+.row6 .item2 .pic img {
+    width: 100%;
+    display: block;
+}
+.row6 .item2 h4 {
+    position: absolute;
+    top:10px;
+    left:10px;
+    font-size: 28px;
+}
+.row6 .item2 .info {
+    position: absolute;
+    bottom: 30px;
+    right:10px;   
+}
 .row6 .item2::after {
     content: "";
     display: block;
@@ -899,7 +908,6 @@ nav .util .dis {display: none;}
     left: 50%;
     transform: translate(-50%,0);
     border-bottom: 1.4px solid #fff;
-    transition: all .2s;
 }
 .row6 .item2::before {
     content: "";
@@ -912,57 +920,55 @@ nav .util .dis {display: none;}
     right:10px;
     bottom: 12px;
     rotate: -45deg;
-    transition: all 2s;
-}
-
-.row6 .item2 .info {
-    position: absolute;
-    bottom: 30px;
-    right:10px;   
 }
 .row6 .col2 {
     width: 100%;
     display: flex;
     justify-content: space-between;
     margin-top: 16px;
+    /* display: none; */
 }
 .row6 .col2>div {
-    background-position: center;
-    background-repeat: no-repeat;
+    overflow: hidden;
     border-radius: 6px;
     position: relative;
     color: #fff;
 }
-
-
 .row6 .item3{
-    flex: 1;
-    aspect-ratio: 4/3;
-    margin-right: 8px;
-    background-image: url(../img/event3_shopping.jpg);
-    background-size:cover;
+    width: calc(40% - 8px);
 }
 .row6 .item3 .pic {
+    width: 100%;
+    height: 100%;
+}
+.row6 .item3 h4 {
+    font-size: 18px;
     position: absolute;
     top:8px;
     left:8px;
-    font-weight: 500;
-    font-size: 18px;
+}
+.row6 .item3 .pic img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .row6 .item4{
-    flex: 1.5;
-    aspect-ratio: 5/2;
-    margin-left: 8px;
-    background-image: url(../img/event2_shinhan.jpg);
-    background-size: cover;
+   width: calc(60% - 8px);
     position: relative;
 }
 .row6 .item4 .pic {
+    font-size: 14px; 
+}
+.row6 .item4 .pic img {
+    width: 100%;
+    display: block;
+}
+.row6 .item4 .info {
     position: absolute;
     top:8px;
     left:8px;
-    font-size: 14px; 
 }
 .row7 .box2,.row7 span {
     display: none;
@@ -974,7 +980,7 @@ nav .util .dis {display: none;}
 }
 .row7 .con>div{
     height: auto;
-    width:calc(50% - 12px);
+    width:calc(50% - 10px);
     border-bottom: 1px solid #B3B3B3;
     position: relative;
 }
@@ -989,20 +995,29 @@ nav .util .dis {display: none;}
 }
 
 .row7 .con>div .pic {
-   aspect-ratio: 5/3;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    overflow: hidden;
     border-radius: 3px;
 }
 .row7 .box1 .pic {
-    background-image: url(../img/mem_sport.gif);
+    width: 100%;
+}
+.row7 .box1 .pic  img {
+    width: 100%;
+    display: block;
 }
 .row7 .box2 .pic {
-    background-image: url(../img/mem_golf.gif);
+
+}
+.row7 .box2 .pic img {
+    width: 100%;
+    display: block;
 }
 .row7 .box3 .pic {
-    background-image: url(../img/mem_partner.gif);
+   
+}
+.row7 .box3 .pic img {
+    width: 100%;
+    display: block;
 }
 
 .row7 .con>div .txt {
