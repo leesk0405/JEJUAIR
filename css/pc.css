@@ -173,9 +173,12 @@
   }
   .banner .swiper-wrapper>div .txt {
     top:400px;
-    left:240px;
+    left:50px;
+    transition: .8s;
   }
-
+  .banner .swiper-slide.swiper-slide-active .txt {
+    left: 200px;
+}
   .banner .swiper-wrapper>div .txt p{
     font-size: 55px;
   }

@@ -307,15 +307,23 @@ nav .util .dis {display: none;}
     height: 100%;
     object-fit: cover;
   }
-  .banner  .swiper-wrapper>div {
+  .banner .swiper-wrapper>div {
     position: relative;
   }
   .banner .swiper-wrapper>div .txt {
     position: absolute;
     top:65%;
-    left: 10%;
+    left: -10%;
     text-align: left;
+    opacity: 0;
+    transition: all .6s;
   }
+  .banner .swiper-slide.swiper-slide-active .txt {
+    left: 10%;
+    opacity: 1;
+}
+
+
   .banner .swiper-wrapper>div .txt p {
     font-weight: 600;
     font-size: 24px;
