@@ -60,7 +60,7 @@ $('.row1 .box .btn>div').on("click",function(){
  });
  let swiper = new Swiper(".slide", {
     slidesPerView: 1,
-    spaceBetween: 30,
+    spaceBetween: 0,
     loop: true,
     autoplay: {
         delay: 3000,
