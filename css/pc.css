@@ -619,7 +619,7 @@
     border-radius: 20px;
   }
   .row5 .con>div:hover {
-    box-shadow: 0 0 16px rgba(245, 116, 24, 0.1);
+    box-shadow: 0 0 16px rgba(245, 116, 24, 0.2);
   }
   .row5 .con img {
     width: 80%;
