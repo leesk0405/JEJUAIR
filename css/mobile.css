@@ -1148,7 +1148,7 @@ footer .down .srchBtn img{
 }
 .qucik_menu{
     width: 100%;
-    height: 60px;
+    height: 64px;
     box-shadow: 0 -4px 8px rgba(0,0,0,.09);
     background-color: #fff;
     position: fixed;
@@ -1165,8 +1165,7 @@ footer .down .srchBtn img{
 .qucik_menu .inner {
     width: 100%;
     height: 100%;
-    display: flex;
-    
+    display: flex; 
     justify-content: space-around;
     align-items: center;   
 }
@@ -1174,21 +1173,38 @@ footer .down .srchBtn img{
 .qucik_menu .inner li {
     flex: 1;
     height: 100%;
-    aspect-ratio: 1 / 1;
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat;
     background-size: 30px;
     background-position: center;
-    border-bottom: 2.4px solid #00000000;
+    border-bottom: 2.4px solid #00000000; */
     box-sizing: border-box;
 }
-.qucik_menu .inner li a {
-    display: block;
+.qucik_menu .inner li:not(.crcle) a {
+    display: flex;
+    flex-direction: column;
     width: 100%;
     height: 100%;
 }
-.qucik_menu .inner li:nth-child(even){
+.qucik_menu .inner li:not(.circle) a img {
+    width: 30%;
+    margin: 0 auto;
+    padding-top: 8px;
+    filter: grayscale(100);
+    opacity: 0.4;
 }
-.qucik_menu .inner .home {
+.qucik_menu .inner li:not(.circle).active a img{
+    filter: grayscale(0);
+    opacity: 1;
+}
+.qucik_menu .inner li a span {
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+    padding-top: 5px;
+}
+/* .qucik_menu .inner li:nth-child(even){
+} */
+/* .qucik_menu .inner .home {
     background-image: url(../img/mo_icon_home.gif);
 }
 .qucik_menu .inner .home:hover {
@@ -1199,47 +1215,41 @@ footer .down .srchBtn img{
 }
 .qucik_menu .inner .flight:hover {
     background-image: url(../img/mo_a_icon_flight.gif);
-}
+} */
 .qucik_menu .inner .circle{
-    position: relative;  
+    /* position: relative;   */
+
     cursor: pointer;
-  
-   
+    margin-bottom: 50px;
+ 
 }
-.qucik_menu .inner .circle:hover {
-    animation: bounce 1s ease 1; 
-}
-@keyframes bounce {
-    0%, 20%, 40%, 100% {
-        transform: translateY(0);
-    }
-    10% {
-        transform: translateY(-3px); /* 시작 부분을 빠르게 설정 */
-    }
-
-    30% {
-        transform: translateY(-3px); /* 좀 더 가볍게 튀는 느낌으로 설정 */
-    }
-
-}
-.qucik_menu .inner .circle::after {
-    content: "";
-    display: block;
+.qucik_menu .inner .circle p {
+    display: flex;
+    flex-direction: column;
     width: 60px;
     height: 60px;
-    background-image: url(../img/mo_icon_barcode.gif);
-    background-repeat: no-repeat;
-    background-size: 28px;
-    background-position: center;
-    box-shadow: 0 -4px 8px rgba(0,0,0,.2);
-    position: absolute;
-    top:-30%;
-    left:50%;
-    transform: translate(-50%,0);
     background-color: #F15A22;
+    margin: 0 auto;
+    position: relative;
     border-radius: 50%;
 }
-.qucik_menu .inner .time{
+.qucik_menu .inner .circle p span {
+    padding-top: 64px;
+    text-align: center;
+}
+.qucik_menu .inner .circle p img{
+    width: 50%;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    /* background-image: url(../img/mo_icon_barcode.gif);
+    background-repeat: no-repeat;
+    background-size: 28px;
+    background-position: center; */
+    /* box-shadow: 0 -4px 8px rgba(0,0,0,.2); */
+}
+/* .qucik_menu .inner .time{
     background-image: url(../img/mo_icon_time.gif);
 }
 .qucik_menu .inner .time:hover {
@@ -1250,7 +1260,9 @@ footer .down .srchBtn img{
 }
 .qucik_menu .inner .srch:hover {
     background-image: url(../img/mo_a_icon_srch.gif);
-}
+} */
+
+
 
 
 

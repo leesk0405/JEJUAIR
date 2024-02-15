@@ -90,6 +90,10 @@ $('.row1 .box .btn>div').on("click",function(){
 
 });
 
+$('.qucik_menu .inner li').click(function(){
+  $(this).addClass('active');
+  $(this).siblings().removeClass('active');
+})
 
 
 
