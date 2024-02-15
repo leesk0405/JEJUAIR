@@ -137,10 +137,12 @@
       display: block;
       width: 36px;  
   }
-
+  .banner {
+    height: 800px;
+  }
   .banner .swiper {
     position: relative;
-    height: 760px;
+    
   }
   .banner .swiper-slide img {
     display: none;
