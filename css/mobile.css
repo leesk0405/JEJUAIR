@@ -1228,12 +1228,32 @@ footer .down .srchBtn img{
 }
 
 @media all and (min-width:760px){
-    .banner .swiper .txt {}
+    .banner{
+        height: 700px;
+    }
+    
     .banner .swiper-wrapper>div .txt p{
         font-size: 45px;
       }
       .banner .swiper-wrapper>div .txt h4 {
         font-size: 60px;
+      }
+      .banner .myNext , .myPrev {
+        width: 44px;
+        height: 44px;
+      }
+      .banner .myNext span , .myPrev span {
+        width: 10px;
+        height: 10px;
+      }
+      .banner .myPrev span {
+        margin-top: 16px;
+        margin-left: 17px;
+      }
+      .banner .myNext span {
+        margin-top: 16px;
+        margin-left: 14px;
+    
       }
       .row4 .ad-slide .txt {
         top:100px;
@@ -1336,4 +1356,8 @@ footer .down .srchBtn img{
         width: 70px;
         padding-top: 10px;
      }
+    .qucik_menu .inner li:not(.circle) a img {
+        width: 12%;
+    }
+
     }    
