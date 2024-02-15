@@ -779,10 +779,9 @@ nav .util .dis {display: none;}
     background-color: #F15A22;
     padding: 0 2px;
   }
-  .row4 .ad-slide a {
-    position: absolute;
-    bottom: 12px;
-    right:12px;
+  .row4 .ad-slide .txt a {
+    margin-left: auto;
+    margin-top: 12px;
     display: block;
     color: #fff;
     font-size: 12px;
@@ -791,7 +790,10 @@ nav .util .dis {display: none;}
     line-height: 30px;
     border: 1px solid #fff;
     border-radius: 50px;
+    text-align: center;
+
   }
+ 
 
   .row4 .swiper-slide {
     text-align: center;
@@ -902,6 +904,7 @@ nav .util .dis {display: none;}
     left:10px;
     font-size: 28px;
 }
+
 .row6 .item2 .info {
     position: absolute;
     bottom: 30px;
@@ -955,6 +958,7 @@ nav .util .dis {display: none;}
     top:8px;
     left:8px;
 }
+
 .row6 .item3 .pic img {
     display: block;
     width: 100%;
@@ -978,6 +982,7 @@ nav .util .dis {display: none;}
     top:8px;
     left:8px;
 }
+
 .row7 .box2,.row7 span {
     display: none;
 }
@@ -1249,3 +1254,113 @@ footer .down .srchBtn img{
 
 
 
+@media all and (min-width:760px){
+    .banner .swiper .txt {}
+    .banner .swiper-wrapper>div .txt p{
+        font-size: 45px;
+      }
+      .banner .swiper-wrapper>div .txt h4 {
+        font-size: 60px;
+      }
+      .row4 .ad-slide .txt {
+        top:100px;
+        right: 50px;
+        font-weight: 400;
+        font-size: 24px
+      }
+      .row4 .ad-slide .txt .dis {
+        font-size: 20px;
+        padding-bottom: 4px;
+        display: block;
+        opacity: .8;
+      }
+      .row4 .ad-slide .txt h4 {
+        font-size: 36px;
+      }
+    
+      .row4 .ad-slide .txt a {
+        margin-top: 20px;
+        font-size: 16px;
+        width: 130px;
+        height: 40px;
+        line-height: 40px;
+        border: 1.5px solid #fff;
+        border-radius: 50px;
+      }
+      .row5 .con img {
+        width: 40%;
+        transition: all .2s;
+    }
+
+    .row6 .item2 h4 {
+        position: absolute;
+        top:30px;
+        left:30px;
+        font-size: 42px;
+    }
+    .row6 .item3 h4 {
+        font-size: 30px;
+        position: absolute;
+        top:20px;
+        left:20px;
+    }
+    .row6 .item4 .info {
+        position: absolute;
+        top:20px;
+        left:20px;
+        font-size: 28px;
+    }
+    .row6 .item4 .info h4 {
+
+    }
+    .row7 .con>div .info h4 {
+        margin-top: 24px;
+      }
+      .row7 .con>div .info p {
+        font-size: 18px;
+        color: #666;
+      }
+
+      .row2 .txt h3 , .row3 .txt h3 ,  
+      .row5 .txt h3 ,.row6 .txt h3, .row7 .txt h3 {
+         font-size: 26px;
+      }
+      .row2 .item .trip, .row3 .item .trip {
+         /* 왕복,편도 */
+         font-size: 18px;
+      }
+      .row2 .item h4, .row3 .item h4 {
+         font-size: 24px;
+      }
+      .row2 .item p, .row3 .item p {
+         padding-top: 16px;
+      }
+      .row2 .item span, .row3 .item span {
+         color: #F58220;
+         font-weight: 700;
+         font-size: 18px;
+         /* row item 안의 info : KRW다음 숫자 */
+      }
+      .row2 .txt .direc , .row3 .txt .direc, .row7 .txt .direc {
+        width: 28px;
+        height: 28px;
+        background-color: #dcdcdc;
+        border-radius: 50%;
+        margin-left: 8px;
+        margin-top: 2px;
+     }
+     .row2 .txt .direc span , .row3 .txt .direc span,
+     .row7 .txt .direc span {
+        margin-left: 7px;
+        margin-top:9px;
+        /* row2, row3 타이틀 옆 화살표 */
+     }
+    
+     .row2 .line, .row3 .line 
+     ,.row5 .line, .row6 .line,
+     .row7 .line{
+        border-bottom: 2px solid #F58220;
+        width: 70px;
+        padding-top: 10px;
+     }
+    }    
