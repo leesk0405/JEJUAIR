@@ -1192,17 +1192,18 @@ footer .down .srchBtn img{
     filter: grayscale(0);
     opacity: 1;
 }
+.qucik_menu .inner li:not(.circle).active a span{
+    color: #333;
+}
 .qucik_menu .inner li a span {
     font-size: 12px;
-    color: #333;
+    color: #ddd;
     text-align: center;
     padding-top: 8px;
 }
 .qucik_menu .inner .circle{
     cursor: pointer;
-    margin-bottom: 50px;
-
- 
+    margin-bottom: 50px; 
 }
 .qucik_menu .inner .circle p {
     display: flex;
@@ -1218,6 +1219,7 @@ footer .down .srchBtn img{
 .qucik_menu .inner .circle p span {
     padding-top: 64px;
     text-align: center;
+    color: #333;
 }
 .qucik_menu .inner .circle p img{
     width: 50%;
