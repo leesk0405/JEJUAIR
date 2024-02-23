@@ -74,6 +74,12 @@ $('.row1 .box .btn>div').on("click",function(){
         nextEl: ".myNext",
         prevEl: ".myPrev",
       },
+      on: {
+        autoplayTimeLeft(s, time, progress) {
+          // Swiper의 자동재생 진행률 업데이트
+          $(".banner .NPbtn .line span").width((1 - progress) * 100 + '%');
+        }
+      }
   });
 
   let swiper2 = new Swiper(".ad-slide", {

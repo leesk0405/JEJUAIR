@@ -200,11 +200,24 @@
   }
   .banner .NPbtn .line {
     width: 1050px;
-    height: 3.3px;
-    background-color: #ffffff;
+    height: 4px;
+    background-color: #fff;
     margin-top: 26px;
-
+    position: relative;
   }
+  .banner .NPbtn .line span {
+    content: "";
+    display: block;
+    position: absolute;
+    top:0;
+    left:0;
+    width: 0%;
+    height: 100%;
+    background-color: #f15a22;
+  }
+  /* .autoplay-progress[style^="--progress"]:not([style*="--progress:0"]) + .banner .NPbtn .line span {
+    width: 100%;
+  } */
 
   .banner .myNext , .myPrev {
     width: 56px;
