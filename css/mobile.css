@@ -1175,6 +1175,9 @@ footer .down .srchBtn img{
     height: 100%;
     box-sizing: border-box;
 }
+.qucik_menu .inner li:active:not(.circle) {
+    background-color: #f2f2f2;
+}
 .qucik_menu .inner li:not(.crcle) a {
     display: flex;
     flex-direction: column;
