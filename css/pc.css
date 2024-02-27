@@ -155,8 +155,8 @@
     background-repeat: no-repeat;
   }
   .banner .swiper-wrapper .item1 {
-    /* background-image: url(../img/JEJU_thum_02.jpg); */
-    background-image: url(../img/main_banner1.jpg);
+    background-image: url(../img/JEJU_thum_02.jpg);
+    /* background-image: url(../img/main_banner1.jpg); */
     /* position: relative; */
     background-position: center 40%;
   }
