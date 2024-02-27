@@ -155,8 +155,10 @@
     background-repeat: no-repeat;
   }
   .banner .swiper-wrapper .item1 {
+    /* background-image: url(../img/JEJU_thum_02.jpg); */
     background-image: url(../img/main_banner1.jpg);
-    position: relative;
+    /* position: relative; */
+    background-position: center 40%;
   }
   .banner .swiper-wrapper .item2 {
     background-image: url(../img/main_banner2.jpg);
@@ -174,7 +176,7 @@
     height: 100%;
   }
   .banner .swiper-wrapper>div .txt {
-    top:370px;
+    top:400px;
     left:50px;
     transition: .8s;
   }
