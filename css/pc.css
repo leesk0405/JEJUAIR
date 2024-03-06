@@ -1,7 +1,7 @@
 @media all and (min-width:1280px){
   header {
     height: 135px;
-    border-bottom: 2px solid #F58220
+    border-bottom: 2px solid #F58220;
   }
 
   .mypage {display: none;}
@@ -142,6 +142,7 @@
   }
   .banner .swiper {
     position: relative;
+    /* vertical-align: top; */
     
   }
   .banner .swiper-slide img {
