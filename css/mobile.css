@@ -323,18 +323,13 @@ nav .util .dis {display: none;}
 }
 .banner .swiper-wrapper>div .txt h4 { 
     color: #fff;
-    /* background-color: #F15A22; */
-    /* background-color: #fff; */
     display: inline-block;
-    /* padding: 0 6px; */
     font-weight: 900;
     font-size: 36px;
   }
   .banner .swiper-wrapper>div .txt .j { 
-    /* color: #fff; */
     color: #fff;
     background-color: #F15A22;
-    /* background-color:transparent; */
     padding: 0 6px;
     font-size: 28px;
     font-weight: 800;
@@ -402,22 +397,6 @@ nav .util .dis {display: none;}
     transition: width .2s;
     border-radius: 5px;
   }
-
-/* .swiper-button-prev,
-.swiper-button-next {
-  background-color: #fff;
-  opacity: 0.5;
-  padding: 15px 5px;
-  border-radius: 20px;
-  color: black !important;
-}
-
-.swiper-button-prev:after,
-.swiper-button-next:after {
-  font-size: 1.1rem !important;
-  font-weight: 600 !important;
-}
- */
 /* row1 */
 .row1 {
     padding-left: 20px;
@@ -530,14 +509,12 @@ nav .util .dis {display: none;}
 {  /* 출발일 */
      width: 100%;
      height: 56px;
-     /* margin: 0 auto; */
      margin-top: 15px;
      margin-bottom: 20px;
      border-bottom: 2px solid #ccc;
      position: relative;
      box-sizing: border-box;
      cursor:pointer
-     /* background-color: antiquewhite; */
 }
 .row1 .box .sit, 
 .row1 .box .person{
@@ -545,20 +522,6 @@ nav .util .dis {display: none;}
         /* 좌석,탑승객 */
         /* width: 50%; */
         margin-right: auto;
-    
-    /* position: relative;
-    padding-left: 8px;
-    padding-right: 8px;
-    width: 100%;
-    box-sizing: border-box;
-    height: 40px;
-    margin: 0 auto;
-    margin-top: 8px;
-    margin-bottom: 24px;
-    border: none;
-    border: 2px solid #00000000;
-    border-bottom: 1px solid #333;
-    font-size: 20px; */
 }
 
 .row1 .box .date::after,
@@ -680,7 +643,6 @@ nav .util .dis {display: none;}
     height: auto;
     position: relative;
     text-wrap: nowrap;
-    /* background-color: #f1f1f1; */
     
  }
  .row2 .item .pic, .row3 .item .pic {
@@ -691,7 +653,6 @@ nav .util .dis {display: none;}
  .row2 .item img, .row3 .item img {
     width: 100%;
     vertical-align: bottom;
-    /* object-fit: cover; */
     
     transition: all .2s;
     
@@ -704,7 +665,6 @@ nav .util .dis {display: none;}
     width: 100%;
     box-sizing: border-box;
     padding: 8px 8px 0 8px; 
-    /* background-color: antiquewhite; */
  }
 
  .row2 .item .trip, .row3 .item .trip {
@@ -943,7 +903,6 @@ nav .util .dis {display: none;}
     display: flex;
     justify-content: space-between;
     margin-top: 16px;
-    /* display: none; */
 }
 .row6 .col2>div {
     overflow: hidden;
