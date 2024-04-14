@@ -81,6 +81,15 @@ $('.row1 .box .btn>div').on("click",function(){
         }
       }
   });
+  
+  
+  $('.slide').mouseover(function() {
+    swiper.autoplay.pause(); // 마우스 오버 시 autoplay 중지
+});
+
+$('.slide').mouseout(function() {
+    swiper.autoplay.resume(); // 마우스가 벗어날 때 autoplay 다시 시작
+});
 
   let swiper2 = new Swiper(".ad-slide", {
     loop: true,
