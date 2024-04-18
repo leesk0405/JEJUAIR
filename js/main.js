@@ -82,7 +82,6 @@ $('.row1 .box .btn>div').on("click",function(){
       }
   });
   
-  
   $('.slide').mouseover(function() {
     swiper.autoplay.pause(); // 마우스 오버 시 autoplay 중지
 });
@@ -91,7 +90,7 @@ $('.slide').mouseout(function() {
     swiper.autoplay.resume(); // 마우스가 벗어날 때 autoplay 다시 시작
 });
 
-  let swiper2 = new Swiper(".ad-slide", {
+  let swiperAd = new Swiper(".ad-slide", {
     loop: true,
     autoplay: {
         delay: 3000,
@@ -102,7 +101,15 @@ $('.slide').mouseout(function() {
       dynamicBullets: true,
     },
   });
+ 
+});
 
+$('.ad-slide').mouseover(function() {
+  swiperAd.autoplay.pause(); // 마우스 오버 시 autoplay 중지
+});
+
+$('.ad-slide').mouseout(function() {
+  swiperAd.autoplay.resume(); // 마우스가 벗어날 때 autoplay 다시 시작
 });
 
 $('.qucik_menu .inner li').click(function(){
