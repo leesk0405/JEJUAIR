@@ -101,21 +101,23 @@ $('.slide').mouseout(function() {
       dynamicBullets: true,
     },
   });
+  
+  $('.ad-slide').mouseover(function() {
+    swiperAd.autoplay.pause(); // 마우스 오버 시 autoplay 중지
+  });
+  
+  $('.ad-slide').mouseout(function() {
+    swiperAd.autoplay.resume(); // 마우스가 벗어날 때 autoplay 다시 시작
+  });
+  
+  $('.qucik_menu .inner li').click(function(){
+    $(this).addClass('active');
+    $(this).siblings().removeClass('active');
+  })
  
 });
 
-$('.ad-slide').mouseover(function() {
-  swiperAd.autoplay.pause(); // 마우스 오버 시 autoplay 중지
-});
 
-$('.ad-slide').mouseout(function() {
-  swiperAd.autoplay.resume(); // 마우스가 벗어날 때 autoplay 다시 시작
-});
-
-$('.qucik_menu .inner li').click(function(){
-  $(this).addClass('active');
-  $(this).siblings().removeClass('active');
-})
 
 
 
